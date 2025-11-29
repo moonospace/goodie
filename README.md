@@ -1,6 +1,6 @@
-# Dev Crates
+# Goodie
 
-_"Perfect developer resources & collections"_
+_"Perfect indie hacker resources & collections"_
 
 Dev crates is a website that provides a collection of developer resources and tools. It is a freemium website that offers a wide range of resources for developers, including databases, clouds, and more. The website is designed to be a one-stop-shop for all your developer needs, with a focus on performance, reliability, and ease of use.
 
@@ -86,7 +86,6 @@ You can find the documentation and details about this project in the links below
 - [Read the changelog](./CHANGELOG.md)
 - [See the discussions](https://github.com/weecraft/devcrates/discussions)
 - [See the issues](https://github.com/weecraft/devcrates/issues)
-- [See the roadmap](./ROADMAP.md)
 
 ## License
 
