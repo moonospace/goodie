@@ -1,7 +1,25 @@
+import { motion } from "motion/react";
+
 export function HeroSection() {
   return (
     <section className="container mx-auto flex flex-col items-center px-5 pt-28 lg:px-0">
-      <div className="flex">
+      <motion.div
+        animate={{
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          transition: {
+            type: "spring",
+            duration: 0.7,
+          },
+        }}
+        className="flex"
+        initial={{
+          opacity: 0,
+          y: 100,
+          scale: 0.7,
+        }}
+      >
         <svg
           data-name="Layer 2"
           height={75}
@@ -18,16 +36,43 @@ export function HeroSection() {
             />
           </g>
         </svg>
-      </div>
+      </motion.div>
 
-      <h2 className="mt-10 text-center font-medium text-5xl tracking-tighter">
+      <motion.h2
+        animate={{
+          opacity: 1,
+          transition: {
+            type: "spring",
+            duration: 0.7,
+            delay: 0.2,
+          },
+        }}
+        className="mt-10 text-center font-medium text-5xl tracking-tighter"
+        initial={{
+          opacity: 0,
+        }}
+      >
         Goodie.
-      </h2>
-      <p className="mt-6 text-pretty text-center text-foreground/80 leading-relaxed lg:w-5/12">
-        The only useful tools, stack, resources for indie hacking, design and
-        development collections made for fast product launch. Best place to
-        explore free and paid resources.
-      </p>
+      </motion.h2>
+
+      <motion.p
+        animate={{
+          opacity: 1,
+          transition: {
+            type: "spring",
+            duration: 0.7,
+            delay: 0.3,
+          },
+        }}
+        className="mt-6 text-pretty text-center text-foreground/80 leading-relaxed lg:w-5/12"
+        initial={{
+          opacity: 0,
+        }}
+      >
+        Top resources collections for indie hacker, designers and developer to
+        boost product launch. Explore thousands sites, tools, utils and more.
+        We're cooking now.
+      </motion.p>
     </section>
   );
 }
