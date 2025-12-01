@@ -31,7 +31,10 @@ export function generatedMetadata({
     { name: "creator", content: "nyomansunima" },
     { name: "publisher", content: "nyomansunima" },
     { name: "application-name", content: "Nyoman Sunima" },
-    { name: "google-site-verification", content: "" },
+    {
+      name: "google-site-verification",
+      content: "mfiO4Ks8AAKeOhiUkYt80WAC5AluXKIkw9GN2Q9ObuY",
+    },
     { name: "category", content: "Websites" },
     { name: "generator", content: "Tanstack Start" },
     { name: "pinterest-rich-pin", content: "true" },

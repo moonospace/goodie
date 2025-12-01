@@ -1,3 +1,4 @@
+import { PosthogProvider } from "@shared/components/posthog";
 import { Button } from "@shared/components/ui/button";
 import globalCss from "@shared/styles/globals.css?url";
 import { createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
@@ -30,12 +31,12 @@ export const Route = createRootRoute({
 
 function RootDocument({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <HeadContent />
       </head>
       <body>
-        {children}
+        <PosthogProvider>{children}</PosthogProvider>
         <Scripts />
       </body>
     </html>
